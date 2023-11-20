@@ -47,7 +47,7 @@ class HomeController extends Controller
 
         // dd($existingCategories);
 
-        return view('pages/landing-page/landing-page', [
+        return view('home', [
             'data' => $data,
             'meta' => $meta,
             'products' => $products,

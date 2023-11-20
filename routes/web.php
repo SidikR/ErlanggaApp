@@ -19,9 +19,7 @@ use App\Http\Controllers\ProfileController;
 */
 
 // Route::get('/'[HomeController::class, 'index'])
-Route::get('/test', function () {
-    return view('index');
-});
+
 Route::get('/', [HomeController::class, 'index']);
 Route::resource('admin/products', ProductController::class)->middleware(['auth', 'verified']);
 Route::resource('admin/galery', GaleryController::class)->middleware(['auth', 'verified']);
