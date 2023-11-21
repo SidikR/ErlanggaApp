@@ -81,7 +81,7 @@ class GaleryController extends Controller
                 $category = $validatedData['new_galery_category'];
             }
 
-            $namaGambar = $this->saveImage($validatedData['croppedImage'], 'img/galery');
+            $namaGambar = $this->saveImage($validatedData['croppedImage'], '../../public_html/img/galery');
 
             $galery = GaleryModel::create([
                 'name' => $validatedData['galery_name'], // Adjusted the key to match your form field
@@ -161,7 +161,7 @@ class GaleryController extends Controller
             // Periksa apakah 'image_input' diberikan
             if ($validatedData['croppedImage'] != null) {
                 // Save the new image and update the galery data
-                $namaGambar = $this->saveImage($validatedData['croppedImage'], 'img/galery');
+                $namaGambar = $this->saveImage($validatedData['croppedImage'], '../../public_html/img/galery');
                 $galery->update([
                     'name' => $validatedData['galery_name'],
                     'description' => $validatedData['description_galery'],
@@ -191,7 +191,7 @@ class GaleryController extends Controller
         $galery = GaleryModel::firstWhere('uuid', $uuid);
         // Hapus gambar terkait jika ada
         if (!empty($galery->image)) {
-            $imagePath = public_path('img/galery/') . $galery->image;
+            $imagePath = public_path('../../public_html/img/galery/') . $galery->image;
 
             // Periksa apakah file ada sebelum dihapus
             if (file_exists($imagePath)) {
