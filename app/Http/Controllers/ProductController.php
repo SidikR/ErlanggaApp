@@ -76,7 +76,7 @@ class ProductController extends Controller
                 'croppedImage' => 'required|string',
             ]);
 
-            $namaGambar = $this->saveImage($validatedData['croppedImage'], '../../public_html/img/products');
+            $namaGambar = $this->saveImage($validatedData['croppedImage'], '../../../public_html/img/products');
 
             $product = ProductModel::create([
                 'name' => $validatedData['product_name'],
@@ -149,7 +149,7 @@ class ProductController extends Controller
             // Periksa apakah 'image_input' diberikan
             if ($validatedData['croppedImage'] != null) {
                 // Save the new image and update the product data
-                $namaGambar = $this->saveImage($validatedData['croppedImage'], '../../public_html/img/products');
+                $namaGambar = $this->saveImage($validatedData['croppedImage'], '../../../public_html/img/products');
                 $product->update([
                     'name' => $validatedData['product_name'],
                     'description' => $validatedData['description_product'],
@@ -177,7 +177,7 @@ class ProductController extends Controller
         $product = ProductModel::firstWhere('uuid', $uuid);
         // Hapus gambar terkait jika ada
         if (!empty($product->image)) {
-            $imagePath = public_path('../../public_html/img/products/') . $product->image;
+            $imagePath = public_path('../../../public_html/img/products/') . $product->image;
 
             // Periksa apakah file ada sebelum dihapus
             if (file_exists($imagePath)) {
