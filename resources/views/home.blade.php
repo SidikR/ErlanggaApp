@@ -623,7 +623,7 @@
                 let timeOfDay = (hours < 12) ? "morning" : (hours < 18) ? "afternoon" : "evening";
                 let productName = nama_produk;
                 let phoneNumber = "6282113050357";
-                let message = "Hello pterlangganusantaraekspor,\nGood " + timeOfDay +
+                let message = "Hello PT Erlangga Nusantara Ekspor,\nGood " + timeOfDay +
                     ".\nI would like to inquire about your product, namely " +
                     productName;
                 let encodedMessage = encodeURIComponent(message);
@@ -638,9 +638,9 @@
                 let minutes = currentTime.getMinutes();
                 let timeOfDay = (hours < 12) ? "morning" : (hours < 18) ? "afternoon" : "evening";
                 let productName = product_name;
-                let emailAddress = "info@terlangganusantaraekspor.com"; // Replace with the desired email address
+                let emailAddress = "order@terlangganusantaraekspor.com"; // Replace with the desired email address
                 let subject = "Inquiry for Product " + productName;
-                let message = "Hello Erlangga Nusantara Ekspor,\n\nGood " + timeOfDay +
+                let message = "Hello PT Erlangga Nusantara Ekspor,\n\nGood " + timeOfDay +
                     ".\nI would like to inquire about your product, namely " + productName +
                     ".\n\nKind regards,\n[Your Name]"; // Replace [Your Name] with your name or other contact information
 
