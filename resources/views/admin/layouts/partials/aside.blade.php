@@ -48,6 +48,13 @@
                     <span class="ml-3 flex-1 whitespace-nowrap">Artikel</span>
                 </a>
             </li>
+            <li>
+                <a href="/webmail"
+                    class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                    <i class="bi bi-envelope-at-fill pe-2"></i>
+                    <span class="ml-3 flex-1 whitespace-nowrap">Email</span>
+                </a>
+            </li>
         </ul>
     </div>
 </aside>
