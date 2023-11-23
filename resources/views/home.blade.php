@@ -638,7 +638,7 @@
                 let minutes = currentTime.getMinutes();
                 let timeOfDay = (hours < 12) ? "morning" : (hours < 18) ? "afternoon" : "evening";
                 let productName = product_name;
-                let emailAddress = "order@pterlangganusantaraekspor.com"; // Replace with the desired email address
+                let emailAddress = "inquiry@pterlangganusantaraekspor.com"; // Replace with the desired email address
                 let subject = "Inquiry for Product " + productName;
                 let message = "Hello PT Erlangga Nusantara Ekspor,\n\nGood " + timeOfDay +
                     ".\nI would like to inquire about your product, namely " + productName +
