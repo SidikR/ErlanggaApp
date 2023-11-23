@@ -49,7 +49,7 @@
                 </a>
             </li>
             <li>
-                <a href="/webmail"
+                <a href="/webmail" target="_blank"
                     class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
                     <i
                         class="bi bi-envelope-at-fill h-5 w-5 flex-shrink-0 pe-2 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"></i>
